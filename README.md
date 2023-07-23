@@ -12,7 +12,7 @@ It has one endpoint which returns a JSON response containing the hostname and IP
 Simply start the app and make a HTTP GET request to http://localhost:8080/ and you will get a JSON response.
 
 ## Docker Build
-The application has been built and packaged in a Docker container and published to DockerHub: https://hub.docker.com/r/kimb88/hello-world-spring-boot/
+The application has been built and packaged in a Docker container and published to DockerHub: https://hub.docker.com/repository/docker/ravina1002/hello-world-spring-boot/
 
 ## How To
 
@@ -53,8 +53,10 @@ docker tag hello-world-spring-boot ravina1002/hello-world-spring-boot
 docker push ravina1002/hello-world-spring-boot
 ```
 
-###helm commands:
+#### Helm commands
+```
 helm create spring-application-0.1.0
 helm lint spring-application
 helm package spring-application
 helm install spring-application-0.1.0.tgz
+```
